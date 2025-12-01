@@ -1,0 +1,274 @@
+.fk-header {
+  background-color: #2874f0;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.fk-header-top {
+  display: flex;
+  align-items: center;
+  padding: 8px 40px;
+  gap: 24px;
+}
+
+.fk-logo {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.fk-logo-main {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.fk-logo-sub {
+  font-size: 11px;
+  color: #ffe500;
+}
+
+.fk-search {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.fk-search input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 2px 0 0 2px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.fk-search button {
+  border: none;
+  background-color: #ffe500;
+  padding: 0 16px;
+  border-radius: 0 2px 2px 0;
+  font-weight: 600;
+}
+
+.fk-search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 2px 2px;
+  z-index: 5;
+}
+
+.fk-search-suggestions button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: transparent;
+  border: none;
+}
+
+.fk-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.fk-header-text-link {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+}
+
+.fk-login-btn {
+  background-color: #fff;
+  color: #2874f0;
+  padding: 6px 24px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.fk-header-link {
+  color: #fff;
+}
+
+.fk-header-more {
+  position: relative;
+}
+
+.fk-header-more-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  min-width: 180px;
+  padding: 4px 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+
+.fk-header-more:hover .fk-header-more-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.fk-header-more-menu button {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 13px;
+}
+
+.fk-header-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fk-header-user-initial {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffe500;
+  color: #2874f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.fk-header-user-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.fk-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+}
+
+.fk-cart-wrapper {
+  position: relative;
+}
+
+.fk-cart-count {
+  background-color: #ff6161;
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 12px;
+}
+
+.fk-cart-preview {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  width: 280px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 8px 10px;
+  z-index: 15;
+  font-size: 12px;
+}
+
+.fk-cart-preview-header,
+.fk-cart-preview-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.fk-cart-preview-footer {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 6px;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.fk-cart-preview-items {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.fk-cart-preview-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.fk-cart-preview-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.fk-cart-preview-title {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.fk-cart-preview-price {
+  font-size: 11px;
+  color: #555;
+}
+
+.fk-nav {
+  display: flex;
+  padding: 8px 40px 10px;
+  gap: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.fk-nav-item {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.fk-header-strip {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 40px;
+  background-color: #1a55c2;
+  font-size: 12px;
+}
+
+.fk-strip-price {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .fk-header-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fk-nav {
+    overflow-x: auto;
+  }
+}
+
+

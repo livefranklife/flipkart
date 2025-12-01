@@ -1,0 +1,251 @@
+.fk-seller-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fk-seller-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(320px, 1.4fr);
+  gap: 24px;
+  background: linear-gradient(90deg, #f5f7ff, #eef3ff);
+  padding: 24px 20px;
+  border-radius: 4px;
+}
+
+.fk-seller-hero-text h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.fk-seller-hero-text p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.fk-seller-hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.fk-seller-primary-btn {
+  border: none;
+  background-color: #fb641b;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.fk-seller-primary-btn.full {
+  width: 100%;
+  text-align: center;
+}
+
+.fk-seller-secondary-btn {
+  border: 1px solid #2874f0;
+  background-color: transparent;
+  color: #2874f0;
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.fk-seller-hero-points {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #333;
+}
+
+.fk-seller-hero-panel {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fk-seller-hero-panel h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.fk-seller-hero-panel label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.fk-seller-hero-panel input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid #d0d0d0;
+  font-size: 13px;
+}
+
+.fk-seller-hero-note {
+  font-size: 11px;
+  color: #878787;
+  margin-top: 8px;
+}
+
+.fk-seller-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fk-seller-stat-card {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.fk-seller-stat-card h2 {
+  margin: 0 0 4px;
+  color: #2874f0;
+}
+
+.fk-seller-stat-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.fk-seller-steps {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.fk-seller-steps h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.fk-seller-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fk-seller-step-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.fk-seller-step-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2874f0;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.fk-seller-step-card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.fk-seller-benefits {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.fk-seller-benefits h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.fk-seller-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fk-seller-benefit-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.fk-seller-benefit-card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.fk-seller-cta-strip {
+  background-color: #2874f0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fk-seller-cta-strip h2 {
+  margin: 0 0 4px;
+}
+
+.fk-seller-cta-strip p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.fk-seller-cta-strip .fk-seller-primary-btn {
+  background-color: #ffe500;
+  color: #000;
+}
+
+@media (max-width: 960px) {
+  .fk-seller-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fk-seller-steps-grid,
+  .fk-seller-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fk-seller-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .fk-seller-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fk-seller-steps-grid,
+  .fk-seller-benefits-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fk-seller-cta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+

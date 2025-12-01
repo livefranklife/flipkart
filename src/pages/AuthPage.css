@@ -1,0 +1,73 @@
+.fk-auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fk-auth-card {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 640px;
+  width: 100%;
+}
+
+.fk-auth-left {
+  background-color: #2874f0;
+  color: #fff;
+  padding: 24px 20px;
+}
+
+.fk-auth-left h2 {
+  margin-top: 0;
+}
+
+.fk-auth-left p {
+  font-size: 13px;
+}
+
+.fk-auth-right {
+  padding: 24px 20px;
+}
+
+.fk-auth-field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.fk-auth-btn {
+  width: 100%;
+  border: none;
+  background-color: #fb641b;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.fk-auth-toggle {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.fk-auth-toggle button {
+  border: none;
+  background: none;
+  color: #2874f0;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .fk-auth-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
