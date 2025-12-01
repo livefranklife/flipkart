@@ -21,6 +21,10 @@ It is created **only for learning, study and practice purposes** – **not** for
 - My Orders page (`/orders`) with a visual order status timeline.
 - Global toast notifications, cart preview dropdown, “Recently viewed” strip and back-to-top button.
 
+## Live Demo
+
+- Deployed frontend (Vercel): [`https://flipkart-idfi.vercel.app/`](https://flipkart-idfi.vercel.app/)
+
 ## Tech Stack
 
 - React (Create React App)
